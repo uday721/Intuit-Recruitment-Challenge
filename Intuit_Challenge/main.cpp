@@ -28,15 +28,25 @@ int main()
 
 
 	//ResourceManager::ResourceManager("transactiondata/user-0.csv");
-	std::string fileName;
+	std::string fileOne,fileTwo;
 	cout << "Please enter the location of 1st user:" << flush;
-	getline(cin, fileName);
+	getline(cin, fileOne);
 
 	ResourceManager callFunc;	
 	// Will store the word and count.
-	std::unordered_map<std::string, float> wordsCount = callFunc.CategorizeIncExp(fileName);
+	std::unordered_map<std::string, float> userOneInfo = callFunc.CategorizeIncExp(fileOne);
 	// Print the words map.
-	PrintMap(wordsCount);
+	PrintMap(userOneInfo);
+
+
+
+	cout << "Please enter the location of 1st user:" << flush;
+	getline(cin, fileTwo);
+
+	std::unordered_map<std::string, float> userTwoInfo = callFunc.CategorizeIncExp(fileTwo);
+	PrintMap(userTwoInfo);
+
+
 
 	
 	cin.get();

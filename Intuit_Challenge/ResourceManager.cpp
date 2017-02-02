@@ -9,6 +9,7 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 	
 	//std::vector<int> totalExpense;
 	float totalExpense[numOfCategories] = { 0.0f };
+	float totalDebt = 0.0f;
 	
 	const string categoryNames[numOfCategories] = { "Paycheck","Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Accomodation","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
 
@@ -55,18 +56,12 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 
 			}
 
-			//if (column_count == 4) {
-			//	amount = std::stof(cell);
-			//	//cout << amount << endl;
-			//	//totalExpense = totalExpense + amount;			
-			//}
-
-
 			std::unordered_map<std::string, int>::const_iterator got = catergory.find(word);
 
 			if (got != catergory.end()){
 				std::getline(lineStream, cell, ','); // getting the corresponding amount of the vendor
 				amount = std::stof(cell);
+				totalDebt += amount;
 			}
 
 			switch (got->second)
@@ -110,12 +105,21 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 			};
 		}
 	}
-	for (unsigned int i = 0; i < 17; i++)
+	totalDebt = totalDebt - totalExpense[0];
+	cout << "total debt" << totalDebt << endl;
+	parsedData[categoryNames[0]]= totalExpense[0];
+
+	for (unsigned int i = 1; i < 17; i++)
 	{
-		//parsedData.insert({ categoryNames[i],totalExpense[i]});
-		parsedData[categoryNames[i]] = totalExpense[i];
+		//percentage spent on each category
+		parsedData[categoryNames[i]] = (totalExpense[i]/totalDebt)*100;
 	}
 	
 
 	return parsedData;
+}
+
+char ResourceManager::UserTraits(string fileName)
+{
+	return 0;
 }

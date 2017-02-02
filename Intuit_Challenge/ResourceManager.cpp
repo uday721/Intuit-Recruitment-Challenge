@@ -10,7 +10,7 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 	//std::vector<int> totalExpense;
 	float totalExpense[numOfCategories] = { 0.0f };
 	
-	const string categoryNames[numOfCategories] = { "Credit","Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Accomodation","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
+	const string categoryNames[numOfCategories] = { "Paycheck","Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Accomodation","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
 
 	std::unordered_map<std::string, int> catergory = {
 	{"Paycheck",1},{"ACS - Student Loans",2},{"Amazon Order - Biology Book",2},{"Amazon Order - Mathematics Book",2},{"Amazon Order - Science Book",2},{"Online Education Courses",2},{"Navient - Student Loans",2},{"Library Membership",2},{"Mary's Book Store",2},{"Science Museum",2},
@@ -55,11 +55,11 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 
 			}
 
-			if (column_count == 4) {
-				amount = std::stof(cell);
-				//cout << amount << endl;
-				//totalExpense = totalExpense + amount;			
-			}
+			//if (column_count == 4) {
+			//	amount = std::stof(cell);
+			//	//cout << amount << endl;
+			//	//totalExpense = totalExpense + amount;			
+			//}
 
 
 			std::unordered_map<std::string, int>::const_iterator got = catergory.find(word);
@@ -110,9 +110,10 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 			};
 		}
 	}
-	for (unsigned int i = 0; i < sizeof(totalExpense); i++)
+	for (unsigned int i = 0; i < 17; i++)
 	{
-		parsedData.insert({ categoryNames[i],totalExpense[i]});
+		//parsedData.insert({ categoryNames[i],totalExpense[i]});
+		parsedData[categoryNames[i]] = totalExpense[i];
 	}
 	
 

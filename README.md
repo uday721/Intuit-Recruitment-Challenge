@@ -34,8 +34,8 @@ Algorithm used for calculating compatibility:
 10. The obtained result from the above step is the difference between two people in their common interests, than (1-difference) should be the compatibility between them.
 11. Even though many researches say that compatibility based on similar personalities and interests, I personally think that opposite might be possible as well like “unlike poles attract each other”.
 
-Thank-you
-Uday shanker
+Thank-you:
+Uday shanker-
 b.udayshanker@outlook.com
 
   

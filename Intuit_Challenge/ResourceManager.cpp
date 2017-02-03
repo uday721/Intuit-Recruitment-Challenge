@@ -2,16 +2,18 @@
 
 std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string fileName)
 {
-	const int numOfCategories = 17;
+	const int numOfCategories = 16;
 	std::string csv_File_name = fileName;
 	std::ifstream data(csv_File_name);
 	std::string line;
 	
 	//std::vector<int> totalExpense;
 	float totalExpense[numOfCategories] = { 0.0f };
+	float totalExpenditure = 0.0f;
 	float totalDebt = 0.0f;
+	int totalIncome = 0;
 	
-	const string categoryNames[numOfCategories] = { "Paycheck","Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Accomodation","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
+	const string categoryNames[numOfCategories] = { "Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
 
 	std::unordered_map<std::string, int> catergory = {
 	{"Paycheck",1},{"ACS - Student Loans",2},{"Amazon Order - Biology Book",2},{"Amazon Order - Mathematics Book",2},{"Amazon Order - Science Book",2},{"Online Education Courses",2},{"Navient - Student Loans",2},{"Library Membership",2},{"Mary's Book Store",2},{"Science Museum",2},
@@ -23,13 +25,12 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 	{"Amazon Order - Star Wars Figurine",8},{"Concert Ticket",8},{"DVD - Star Trek",8},{"Movie Ticket",8},{"Netflix Subscription",8},{"On Demand Movie",8},{"On Demand TV",8},{"PlayStation Membership",8},{"Red Box DVD Rental",8},{"Video Game - PlayStation",8},
 	{"Amazon Order - Baby Crib",9},{"Babies R Us",9},{"BuyBuyBaby.com",9},{"Hospital - Prenatal Care",9},
 	{"Gas & Electric",10},{"Housing Rent",10},{"Von's Groceries",10},{"Water & Sewer",10},{"Whole Foods",10},{"Ralph's Grocery Store",10},{"Time Warner Cable",10},{"Credit Card Payment",10},
-	{"Pet Smart",11},{"Pet Supply - Cat Food",11},
-	{"Best Western Hotel",12},{"Cancun Beach Resort",12},{"Comfort Inn",12},
-	{"Total Gym Fees",13},{"GNC",13},{"Sprouts Market",13},{"Vitamin Shoppe",13},
-	{"Wine Bar",14},{"Wine Delivery",14},{"Green Flash Brewery",14},{"John's Bar & Restaurant",14},{"Owl Night Club",14},{"Rodriguez's Bar and Grill",14},{"Fisker Night Club",14},{"Seaside Bar",14},
-	{"Wedding Planner",15},{"Divorce Lawyer Fees",15},
-	{"Bank Fee - Negative Balance",16},{"Credit Card Overdraft Fee",16},{"Time Warne Cable - Late Payment Fee",16},{"Water & Sewer - Late Payment Penalty",16},{"Housing Rent - Late Fee",16},
-	{"FedEx Shipping",17},{"Goods2 - ThinkGeek",17},{"Hamilton Move & Storage",17},{"Home Depot",17},{"Jerome's Furniture",17},{"Kay Jewelry",17},{"Mark's Movers",17},{"Refrigerator Depot",17},{"Southwest Flights - Cancun",17}
+	{"Pet Smart",11},{"Pet Supply - Cat Food",11},	
+	{"Total Gym Fees",12},{"GNC",12},{"Sprouts Market",12},{"Vitamin Shoppe",12},
+	{"Wine Bar",13},{"Wine Delivery",13},{"Green Flash Brewery",13},{"John's Bar & Restaurant",13},{"Owl Night Club",13},{"Rodriguez's Bar and Grill",13},{"Fisker Night Club",13},{"Seaside Bar",13},
+	{"Wedding Planner",14},{"Divorce Lawyer Fees",14},
+	{"Bank Fee - Negative Balance",15},{"Credit Card Overdraft Fee",15},{"Time Warne Cable - Late Payment Fee",15},{"Water & Sewer - Late Payment Penalty",15},{"Housing Rent - Late Fee",15},
+	{"FedEx Shipping",16},{"Goods2 - ThinkGeek",16},{"Hamilton Move & Stotrage",16},{"Home Depot",16},{"Jerome's Furniture",16},{"Kay Jewelry",16},{"Mark's Movers",16},{"Refrigerator Depot",16},{"Southwest Flights - Cancun",16},{"Best Western Hotel",16},{ "Cancun Beach Resort",16 },{ "Comfort Inn",16 }
 	};
 
 	std::unordered_map<std::string, float> parsedData;
@@ -66,60 +67,67 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 
 			switch (got->second)
 			{
-			case 1:totalExpense[0] += amount; // case 1 is total credit in the transactions
+			case 1:totalIncome += amount; // case 1 is total credit in the transactions
 				break;
-			case 2:totalExpense[1] += amount; // case 2 is total money spent on education
+			case 2:totalExpense[0] += amount; // case 2 is total money spent on education
 				break;
-			case 3:totalExpense[2] += amount; // case 3 is total money spent on sports and accessories
+			case 3:totalExpense[1] += amount; // case 3 is total money spent on sports and accessories
 				break;
-			case 4:totalExpense[3] += amount; // case 4 is total money spent on food and dining
+			case 4:totalExpense[2] += amount; // case 4 is total money spent on food and dining
 				break;
-			case 5:totalExpense[4] += amount; // case 5 is total money spent on transportation
+			case 5:totalExpense[3] += amount; // case 5 is total money spent on transportation
 				break;
-			case 6:totalExpense[5] += amount; // case 6 is total money spent on arts
+			case 6:totalExpense[4] += amount; // case 6 is total money spent on arts
 				break;
-			case 7:totalExpense[6] += amount; // case 7 is total money spent on music
+			case 7:totalExpense[5] += amount; // case 7 is total money spent on music
 				break;
-			case 8:totalExpense[7] += amount; // case 8 is total money spent on entertainment
+			case 8:totalExpense[6] += amount; // case 8 is total money spent on entertainment
 				break;
-			case 9:totalExpense[8] += amount; // case 9 is money spent on baby products
+			case 9:totalExpense[7] += amount; // case 9 is money spent on baby products
 				break;
-			case 10:totalExpense[9] += amount; // case 10 is money spent on house and maintenance
+			case 10:totalExpense[8] += amount; // case 10 is money spent on house and maintenance
 				break;
-			case 11:totalExpense[10] += amount; // case 11 is money spent on pets
+			case 11:totalExpense[9] += amount; // case 11 is money spent on pets
 				break;
-			case 12:totalExpense[11] += amount; // case 12 is money spent on accomodation
+			case 12:totalExpense[10] += amount; // case 12 is money spent on health
 				break;
-			case 13:totalExpense[12] += amount; // case 13 is money spent on health
+			case 13:totalExpense[11] += amount; // case 13 is money spent on wines and bars
 				break;
-			case 14:totalExpense[13] += amount; // case 14 is money spent on wines and bars
+			case 14:totalExpense[12] += amount; // case 14 is money spent on wedding and divorse
 				break;
-			case 15:totalExpense[14] += amount; // case 15 is money spent on wedding and divorse
+			case 15:totalExpense[13] += amount; // case 15 is money spent on late payments
 				break;
-			case 16:totalExpense[15] += amount; // case 16 is late payments
+			case 16:totalExpense[14] += amount; // case 16 is other expenses
 				break;
-			case 17:totalExpense[16] += amount; // case 17 is other expenses
-				break;
+			
 			default:
 				break;
 			};
 		}
 	}
-	totalDebt = totalDebt - totalExpense[0];
-	cout << "total debt" << totalDebt << endl;
-	parsedData[categoryNames[0]]= totalExpense[0];
+	totalExpenditure = totalDebt - totalIncome;
+	cout << "Total Income:" << totalIncome << endl;
+	cout << "Total Expenditure:" << totalExpenditure << endl;
+	cout << "total Debt" << totalDebt << endl;
+	//parsedData[categoryNames[0]]= totalExpense[0];
 
-	for (unsigned int i = 1; i < 17; i++)
+	for (unsigned int i = 0; i < 15; i++)
 	{
 		//percentage spent on each category
-		parsedData[categoryNames[i]] = (totalExpense[i]/totalDebt)*100;
+		parsedData[categoryNames[i]] = (totalExpense[i]/ totalExpenditure)*100;
 	}
 	
 
 	return parsedData;
 }
 
-char ResourceManager::UserTraits(string fileName)
+std::unordered_map<std::string, float> ResourceManager::SpecialTraits(string fileName)
 {
-	return 0;
+
+
+
+
+	return std::unordered_map<std::string, float>();
 }
+
+

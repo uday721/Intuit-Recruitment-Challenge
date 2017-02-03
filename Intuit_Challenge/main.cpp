@@ -10,11 +10,11 @@
 
 
 
-template <class KTy, class Ty>
-void PrintMap(unordered_map<KTy, Ty> map)
+//template <class KTy, class Ty>
+void PrintMap(unordered_map<std::string, float> map)
 {
 	
-	typedef std::unordered_map<KTy, Ty>::iterator iterator;
+	typedef std::unordered_map<std::string, float>::iterator iterator;
 	for (iterator p = map.begin(); p != map.end(); p++)
 	{
 		cout << p->first << ": " << p->second << endl;
@@ -23,10 +23,54 @@ void PrintMap(unordered_map<KTy, Ty> map)
 	
 }
 
+
+float Compatability(unordered_map<std::string, float> user1, unordered_map<std::string, float>user2)
+{
+	
+	float user1Value = 0.0f, user2Value =0.0f,compatabilityFactor=0.0f;
+
+	std::unordered_map<std::string, int> catergoryweightage = { 
+		{"Education",16 }, { "Sports",10 }, { "Food and Dining",7 }, {"Transportation",5},{"Art",10},{"Music",23},{"Entertainment",11},{"Baby Products",672},
+		{"House and Maintenance",11},{"Pets",44},{"Health",17},{"Wine and Bars",15},{"Weddings and Divorse",1786},{"Late Payment",80},{"Other Expenses",94}
+	};
+
+	typedef std::unordered_map<std::string, int>::iterator iterator;
+	for (iterator p = catergoryweightage.begin(); p != catergoryweightage.end(); p++)
+	{
+		std::unordered_map<std::string, float>::const_iterator got1 = user1.find(p->first);
+		if (got1 != user1.end())
+		{
+			float value = got1->second*p->second;
+			user1Value += value;
+		}
+
+		std::unordered_map<std::string, float>::const_iterator got2 = user2.find(p->first);
+		if (got2 != user2.end())
+		{
+			float value = got2->second*p->second;
+			user2Value += value;
+		}
+	}
+
+	if (user1Value > user2Value)
+	{
+		compatabilityFactor = user2Value / user1Value;
+	}
+	else
+	{
+		compatabilityFactor = user1Value / user2Value;
+	}
+
+
+
+	return compatabilityFactor;
+}
+
+
 int main()
 {
 
-
+	float compatabilityRatio=0.0f;
 	//ResourceManager::ResourceManager("transactiondata/user-0.csv");
 	std::string fileOne,fileTwo;
 	cout << "Please enter the location of 1st user:" << flush;
@@ -38,7 +82,9 @@ int main()
 	// Print the words map.
 	PrintMap(userOneInfo);
 
+	cout << endl;
 
+	
 
 	cout << "Please enter the location of 1st user:" << flush;
 	getline(cin, fileTwo);
@@ -46,13 +92,18 @@ int main()
 	std::unordered_map<std::string, float> userTwoInfo = callFunc.CategorizeIncExp(fileTwo);
 	PrintMap(userTwoInfo);
 
-
-
+	cout << endl;
+	
+	compatabilityRatio= Compatability(userOneInfo, userTwoInfo);
+	cout << "compatability between the two user is:" << compatabilityRatio << endl;
 	
 	cin.get();
 
 	return EXIT_SUCCESS;
 }
+
+
+
 
 
 //// Begin reading from file:

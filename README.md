@@ -9,8 +9,9 @@
 ##Inputs:
 
 1. When you run the program a solution window pops up prompting to enter the two user names.
-
-            ```  Example : Enter the profile of first person:```
+```
+              Example : Enter the profile of first person:
+```
 2. Enter any two usernames from the transaction-data file to get their compatibility ratio.
 ```
               Example  :  Enter the profile of first person:user-1 (press Enter)

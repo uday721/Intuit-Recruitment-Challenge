@@ -33,7 +33,7 @@ The output will be the compatibility ratio of the two users, the value will in t
 6. This weightage value can be obtained in a different manner as well, based on research done on relationships. I used the above method instead of giving arbitrary values.
 7. According to some of the researches, people with same personalities and interests have better compatibility with each other like the saying “birds of same feather flock together”
 8. So I calculated the difference in amount spent by two persons on their common interests based on the weightage of that category, for example user-1 spent 5% of his total expenditure on sports and similarly user-2 spent 7%, then I calculated the difference using the weightage.
-9. 10. The difference value is normalized using highest difference which is obtained by training data of all the users to every other user.
+9. The difference value is normalized using highest difference which is obtained by training data of all the users to every other user.
 11. The obtained result from the above step is the difference between two people in their common interests, than (1-difference) should be the compatibility between them.
 12. Even though many researches say that compatibility based on similar personalities and interests, I personally think that opposite might be possible as well like “unlike poles attract each other”.
 

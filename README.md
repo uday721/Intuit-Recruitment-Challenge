@@ -4,10 +4,12 @@
 1. The program is written in visual c++ using visual studios 2015 IDE.
 2. Clone or Download the project from github.
 3. Open the solution in visual studios 2015 IDE and run the program.
+
 ---
 ##Inputs:
 
 1. When you run the program a solution window pops up prompting to enter the two user names.
+
             ```  Example : Enter the profile of first person:```
 2. Enter any two usernames from the transaction-data file to get their compatibility ratio.
 ```
@@ -33,6 +35,7 @@ The output will be the compatibility ratio of the two users, the value will in t
 9. 10. The difference value is normalized using highest difference which is obtained by training data of all the users to every other user.
 11. The obtained result from the above step is the difference between two people in their common interests, than (1-difference) should be the compatibility between them.
 12. Even though many researches say that compatibility based on similar personalities and interests, I personally think that opposite might be possible as well like “unlike poles attract each other”.
+
 ---
 Thank-you:
 Uday shanker

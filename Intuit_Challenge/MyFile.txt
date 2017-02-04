@@ -1,0 +1,100 @@
+ACS - Student Loans: 1160**
+Amazon Order - Athletic Equipment: 2982**
+Amazon Order - Baby Crib: 83**
+Amazon Order - Biology Book: 1622**
+Amazon Order - Mathematics Book: 1603**
+Amazon Order - Paint Bushes: 2658**
+Amazon Order - Paint Canvas: 2749**
+Amazon Order - Science Book: 1573**
+Amazon Order - Star Wars Figurine: 1680**
+Art Auction: 2669**
+Art Museum: 1586**
+Art's Art Supplies: 2646**
+Ashley's Craft Store: 2632**
+Athletic Apparel: 3017**
+Babies "R" Us: 83**
+Bank Fee - Negative Balance: 474**
+Best Western Hotel: 42**
+Bike Rental: 2994**
+Bowling: 1847**
+BuyBuyBaby.com: 83**
+Cancun Beach Resort: 83**
+Coffee: 1600**
+Comfort Inn: 42**
+Concert Ticket: 1750**                 
+Credit Card Overdraft Fee: 909**
+Credit Card Payment: 1380**
+DVD - Star Trek: 1631**
+Dick's Sporting Goods: 2982**
+Divorce Lawyer Fees: 42**
+FedEx Shipping: 80**
+Fisker Night Club: 1807**
+Food Delivery - GrubHub: 6851**
+Food Delivery - Uber Eats: 2545**
+GNC: 3026**
+Gas & Electric: 1220**
+Goods2 - ThinkGeek: 1557**
+Green Flash Brewery: 1938**
+Guitar Center: 2696**
+Hamilton Move & Storage: 80**
+Home Depot: 80**
+Hospital - Prenatal Care: 83**
+Housing Rent: 2000**
+Housing Rent - Late Fee: 472**
+Ice Skating Rink: 1915**
+Jerome's Furniture: 80**
+John's Bar & Restaurant: 1911**
+Karaoke Bar: 1846**
+Kay Jewelry: 83**
+Library Membership: 1666**
+Lyft: 8495**
+Mark's Movers: 80**
+Mary's Book Store: 1575**
+Michael's Crafts: 2612**
+Movie Ticket: 1871**
+Music Lessons - Piano: 2676**
+NBA Ticket - Lakers: 2999**
+NFL Ticket - Chargers: 3137**
+Navient - Student Loans: 1240**
+Netflix Subscription: 980**
+On Demand Movie: 2460**
+On Demand TV: 2487**
+Online Education Courses: 1553**
+Owl Night Club: 1809**
+Painting Course Fees: 2818**
+Paycheck: 1414
+Pet Smart: 2519**
+Pet Supply - Cat Food: 2537**
+PlayStation Membership: 2463**
+Podcast Subscription: 2521**
+Public Transportation - Bus Pass: 8415**
+Public Transportation - Train Pass: 8478**
+Ralph's Grocery Store: 4215**
+Red Box DVD Rental: 2529**
+Refrigerator Depot: 80**
+Restaurant - Burgers: 4317**
+Restaurant - Chinese: 4308**
+Restaurant - Pizza: 4179**
+Restaurant - Steakhouse: 4141**
+Rodriguez's Bar and Grill: 1841**
+Sam's Sporting Apparel: 3017**
+San Diego Museum: 1633**
+Science Museum: 1669**
+Seaside Bar: 1839**
+Southwest Flights - Cancun: 83**
+Sprouts Market: 4188**
+Starbucks Coffee: 4301**
+Taxi: 8529**
+Time Warne Cable - Late Payment Fee: 446**
+Time Warner Cable: 1220**
+Total Gym Fees: 3002**
+Uber: 8443**
+Video Game - PlayStation: 1596**
+Vitamin Shoppe: 3037**
+Von's Groceries: 4178**
+Water & Sewer: 1200**
+Water & Sewer - Late Payment Penalty: 480**
+Wedding Planner: 83**
+Whole Foods: 4215**
+Wine Bar: 1824**
+Wine Delivery: 2429**

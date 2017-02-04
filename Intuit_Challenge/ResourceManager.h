@@ -13,9 +13,7 @@ class ResourceManager
 {
 public:
 	std::unordered_map<std::string, float> CategorizeIncExp(string fileName);
-	std::unordered_map<std::string, float> SpecialTraits(string fileName);
-	
-	
+		
 };
 
 

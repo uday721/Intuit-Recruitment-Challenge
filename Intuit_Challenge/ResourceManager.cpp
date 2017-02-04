@@ -2,12 +2,12 @@
 
 std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string fileName)
 {
-	const int numOfCategories = 16;
+	const int numOfCategories = 15;
 	std::string csv_File_name = fileName;
 	std::ifstream data(csv_File_name);
 	std::string line;
 	
-	//std::vector<int> totalExpense;
+	
 	float totalExpense[numOfCategories] = { 0.0f };
 	float totalExpenditure = 0.0f;
 	float totalDebt = 0.0f;
@@ -15,6 +15,7 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 	
 	const string categoryNames[numOfCategories] = { "Education","Sports","Food and Dining","Transportation","Art","Music","Entertainment","Baby Products","House and Maintenance","Pets","Health","Wine and Bars","Weddings and Divorse","Late Payment","Other Expenses" };
 
+	//All the vendors are categorized in a map.
 	std::unordered_map<std::string, int> catergory = {
 	{"Paycheck",1},{"ACS - Student Loans",2},{"Amazon Order - Biology Book",2},{"Amazon Order - Mathematics Book",2},{"Amazon Order - Science Book",2},{"Online Education Courses",2},{"Navient - Student Loans",2},{"Library Membership",2},{"Mary's Book Store",2},{"Science Museum",2},
 	{"Amazon Order - Athletic Equipment",3},{"Athletic Apparel",3},{"Bowling",3},{"Dick's Sporting Goods",3},{"Ice Skating Rink",3},{"NBA Ticket - Lakers",3},{"NFL Ticket - Chargers",3},{"Sam's Sporting Apparel",3},
@@ -106,9 +107,11 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 		}
 	}
 	totalExpenditure = totalDebt - totalIncome;
+	cout << endl;
 	cout << "Total Income:" << totalIncome << endl;
 	cout << "Total Expenditure:" << totalExpenditure << endl;
 	cout << "total Debt" << totalDebt << endl;
+	cout << endl;
 	//parsedData[categoryNames[0]]= totalExpense[0];
 
 	for (unsigned int i = 0; i < 15; i++)
@@ -121,13 +124,6 @@ std::unordered_map<std::string, float> ResourceManager::CategorizeIncExp(string 
 	return parsedData;
 }
 
-std::unordered_map<std::string, float> ResourceManager::SpecialTraits(string fileName)
-{
 
-
-
-
-	return std::unordered_map<std::string, float>();
-}
 
 

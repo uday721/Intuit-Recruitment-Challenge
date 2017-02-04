@@ -1,0 +1,116 @@
+//////////////////////////////////////education
+ACS - Student Loans: 1160 (15)
+Amazon Order - Biology Book: 1622 (21)
+Amazon Order - Mathematics Book: 1603 (21)
+Amazon Order - Science Book: 1573 (21)
+Online Education Courses: 1553 (21)
+Navient - Student Loans: 1240 (15)
+Library Membership: 1666 (22)
+Mary's Book Store: 1575 (21)
+Science Museum: 1669 (16)
+////////////////////////////////////////sports
+Amazon Order - Athletic Equipment: 2982
+Athletic Apparel: 3017
+Bowling: 1847    (1)
+Dick's Sporting Goods: 2982
+Ice Skating Rink: 1915
+NBA Ticket - Lakers: 2999
+NFL Ticket - Chargers: 3137
+Sam's Sporting Apparel: 3017
+/////////////////////////////////////food and dining
+Coffee: 1600 	(2)
+Food Delivery - GrubHub: 6851
+Food Delivery - Uber Eats: 2545
+Restaurant - Burgers: 4317 (17)
+Restaurant - Chinese: 4308 (18)
+Restaurant - Pizza: 4179 (19)
+Restaurant - Steakhouse: 4141 (20)
+Starbucks Coffee: 4301 	(2)
+//////////////////////////////////////transportation
+Bike Rental: 2994
+Public Transportation - Bus Pass: 8415
+Public Transportation - Train Pass: 8478
+Taxi: 8529
+Uber: 8443
+Lyft: 8495
+///////////////////////////////////////////Art
+Amazon Order - Paint Bushes: 2658 (3)
+Amazon Order - Paint Canvas: 2749 (3)
+Art Auction: 2669
+Art Museum: 1586 (16)
+Art's Art Supplies: 2646
+Ashley's Craft Store: 2632
+Painting Course Fees: 2818 (3)
+San Diego Museum: 1633 (16)
+Michael's Crafts: 2612
+//////////////////////////////////////////music
+Guitar Center: 2696 (5)
+Karaoke Bar: 1846 (6)
+Music Lessons - Piano: 2676 (7)
+Podcast Subscription: 2521
+///////////////////////////////////////entertainment
+Amazon Order - Star Wars Figurine: 1680 (8)
+Concert Ticket: 1750 
+DVD - Star Trek: 1631 (8)
+Movie Ticket: 1871
+Netflix Subscription: 980
+On Demand Movie: 2460
+On Demand TV: 2487
+PlayStation Membership: 2463 (9)
+Red Box DVD Rental: 2529
+Video Game - PlayStation: 1596 (9)
+//////////////////////////////////////baby products (10)
+Amazon Order - Baby Crib: 83
+Babies "R" Us: 83
+BuyBuyBaby.com: 83
+Hospital - Prenatal Care: 83
+/////////////////////////////////////house maintenance
+Gas & Electric: 1220
+Housing Rent: 2000
+Von's Groceries: 4178
+Water & Sewer: 1200
+Whole Foods: 4215
+Ralph's Grocery Store: 4215
+Time Warner Cable: 1220
+Credit Card Payment: 1380
+//////////////////////////////////////pets (11)
+Pet Smart: 2519
+Pet Supply - Cat Food: 2537
+//////////////////////////////////accomodation
+Best Western Hotel: 42
+Cancun Beach Resort: 83
+Comfort Inn: 42
+/////////////////////////////////health
+Total Gym Fees: 3002 (12)
+GNC: 3026
+Sprouts Market: 4188
+Vitamin Shoppe: 3037
+///////////////////////////////////wine and bars
+Wine Bar: 1824
+Wine Delivery: 2429
+Green Flash Brewery: 1938
+John's Bar & Restaurant: 1911
+Owl Night Club: 1809
+Rodriguez's Bar and Grill: 1841
+Fisker Night Club: 1807
+Seaside Bar: 1839
+//////////////////////////////////////wedding and divorse
+Wedding Planner: 83 (13)
+Divorce Lawyer Fees: 42 (14)
+/////////////////////////////////////late payment
+Bank Fee - Negative Balance: 474
+Credit Card Overdraft Fee: 909
+Time Warne Cable - Late Payment Fee: 446
+Water & Sewer - Late Payment Penalty: 480
+Housing Rent - Late Fee: 472
+//////////////////////////////////////others
+FedEx Shipping: 80
+Goods2 - ThinkGeek: 1557
+Hamilton Move & Storage: 80
+Home Depot: 80
+Jerome's Furniture: 80
+Kay Jewelry: 83
+Mark's Movers: 80
+Refrigerator Depot: 80
+Southwest Flights - Cancun: 83
+

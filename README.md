@@ -10,8 +10,8 @@ Inputs:
 1. When you run the program a solution window pops up prompting to enter the two user names.
               Example : Enter the profile of first person:
 2. Enter any two usernames from the transaction-data file to get their compatibility ratio.
-              Example  :  Enter the profile of first person:user-1
-                  	      Enter the profile of second person:user-50
+              Example  :  Enter the profile of first person:user-1 (press Enter)
+                  	      Enter the profile of second person:user-50 (press Enter)
 
 Output:
 
@@ -33,7 +33,7 @@ Algorithm used for calculating compatibility:
 12. Even though many researches say that compatibility based on similar personalities and interests, I personally think that opposite might be possible as well like “unlike poles attract each other”.
 
 Thank-you:
-Uday shanker-
+Uday shanker
 b.udayshanker@outlook.com
 
   
